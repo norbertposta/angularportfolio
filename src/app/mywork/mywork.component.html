@@ -1,0 +1,139 @@
+<section class="my-work" id="work">
+    <h2 class="section__title">My work</h2>
+
+    
+    <div class="portfolio">
+
+
+        <a class="portfolio__item" target="_blank" (click)="openDialogPortfolio()">
+            <img src="assets/img/mywork-img/portfolio-norbert.png" alt="" class="portfolio__img">
+        </a>
+
+        <a class="portfolio__item" target="_blank" (click)="openDialogEniac()">
+            <img src="assets/img/mywork-img/portfolio-eniachub.png" alt="" class="portfolio__img">
+        </a>
+
+        <a class="portfolio__item" target="_blank" (click)="openDialogPub()">
+            <img src="assets/img/mywork-img/portfolio-05.jpg" alt="" class="portfolio__img">
+        </a>
+
+        <!-- <a  href="https://github.com/postanorbert/pubcrawlmalaga"  class="portfolio__item" target="_blank">
+            <img src="assets/img/mywork-img/portfolio-05.jpg" alt="" class="portfolio__img">
+        </a> -->
+  
+        <a (click)="openDialogSouthTours()" class="portfolio__item" target="_blank">
+            <img src="assets/img/mywork-img/portfolio-07.jpg" alt="" class="portfolio__img">
+        </a>
+        
+      
+        <a href="https://www.europalibreopinion.org/" class="portfolio__item" target="_blank">
+            <img src="assets/img/mywork-img/portfolio-08.jpg" alt="" class="portfolio__img">
+        </a>
+     
+ 
+
+    </div>
+
+    <div class="btn__container">
+        <a class="btn btn__lower" routerLink="/">Home</a>
+        <a class="btn btn__lower" routerLink="/about">About me</a>
+
+       </div>
+
+
+</section>
+
+
+<dialog id="my-dialog-pubcrawl" class="my-dialog">
+    <div class="np-row">
+     <div class="np-title">Pub Crawl Malaga</div>
+     <div class="np-close-btn" title="Close" (click)="closeDialogPub()"><i class="fa fa-times" aria-hidden="true"></i></div>
+ </div>
+
+
+ <div class="np-dialog-body">
+    <div class="np-description">
+        <img class="np-description-image" src="assets/img/mywork-img/portfolio-05.jpg" alt="">
+        <div class="np-description-text"> Website that promotes Pub Crawl Tours in Malaga</div>
+    </div>
+    <div class="np-tools"> <strong>Tools:</strong> Javascript, JQuery, HTML, CSS, PHP, Gimp</div>
+    <div class="np-link"> <strong>Link: </strong> <a href="https://pubcrawlmalaga.com/" target="_blank">pubcrawlmalaga.com/</a></div>
+ </div>
+
+ </dialog>
+
+
+
+ <dialog id="my-dialog-southtours" class="my-dialog">
+    <div class="np-row">
+     <div class="np-title">South Tours</div>
+     <div class="np-close-btn" title="Close" (click)="closeDialogSouthTours()"><i class="fa fa-times" aria-hidden="true"></i></div>
+ </div>
+
+
+ 
+ <div class="np-dialog-body">
+    <div class="np-description">
+        <img class="np-description-image" src="assets/img/mywork-img/portfolio-07.jpg" alt="">
+        <div class="np-description-text">Website that promotes events in Spain </div>
+    </div>
+    <div class="np-tools"> <strong>Tools:</strong> Wordpress, Elementor, CSS, HTML</div>
+    <div class="np-link"> <strong>Link: </strong> <a href="https://south.tours/" target="_blank">south.tours</a></div>
+ </div>
+ 
+ </dialog>
+
+ <dialog id="my-dialog-portfolio" class="my-dialog">
+    <div class="np-row">
+     <div class="np-title">Angular Portfolio</div>
+     <div class="np-close-btn" title="Close" (click)="closeDialogPortfolio()"><i class="fa fa-times" aria-hidden="true"></i></div>
+ </div>
+
+ <div class="np-dialog-body">
+    <div class="np-description">
+        <img class="np-description-image" src="assets/img/mywork-img/portfolio-norbert.png" alt="">
+        <div class="np-description-text"> This is an Angular Portfolio that aims to show my profile, knowledge, previous work experiences.</div>
+    </div>
+    <div class="np-tools"> <strong>Tools:</strong> Angular 13, SCSS, TypeScript</div>
+    <div class="np-link"> <strong>Link: </strong> <a href="https://norbertposta.com/" target="_blank">norbertposta.com</a></div>
+ </div>
+ </dialog>
+
+
+ <dialog id="my-dialog-eniac" class="my-dialog">
+    <div class="np-row">
+     <div class="np-title">EniacHUB</div>
+     <div class="np-close-btn" title="Close" (click)="closeDialogEniac()"><i class="fa fa-times" aria-hidden="true"></i></div>
+ </div>
+
+ 
+ <div class="np-dialog-body">
+    <div class="np-description">
+        <img class="np-description-image" src="assets/img/mywork-img/portfolio-eniachub.png" alt="">
+        <div class="np-description-text">My job entails maintaining and developing the Front-end of the ERP System's Web Application.</div>
+    </div>
+    <div class="np-tools"> <strong>Tools:</strong> HTML, SCSS, JavaScript, AngularJS</div>
+    <div class="np-link"> <strong>Link: </strong> <a href="https://eniachub.com/" target="_blank">eniachub.com/</a></div>
+ </div>
+ </dialog>
+
+
+ <style>
+     .np-dialog-body{
+         margin: 5px;
+         margin-top: 10px;
+        
+     }
+
+     /* .np-description-text{
+        display:inline;
+        justify-content: flex-start;
+     } */
+
+
+
+ </style>
+
+
+
+

@@ -1,0 +1,90 @@
+.my-services {
+    background-color: var(--clr-dark);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+}
+
+
+
+
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+
+@media (min-width: 600px){
+    .service{
+        padding: 15px;
+        width: 33%;
+    }
+}
+
+
+
+section {
+    padding: 2em 2em;
+}
+
+section {
+    display: block;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+// .section__title--services{
+
+//     margin-bottom: 1em;
+
+// }
+
+.btn__lower{
+    margin: 5px;
+    padding: 3px;
+   
+}
+
+.btn__container {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (min-width: 600px)
+{
+
+//Displays the service divs next to each other
+.services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__title {
+    margin-top: 1em;
+}
+
+
+
+}

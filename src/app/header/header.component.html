@@ -1,0 +1,39 @@
+<header>
+
+
+
+  <div class="logo logo__mobile">
+      <img src="assets/img/norberticon.png" alt="" routerLink="/" style="cursor: pointer">
+  </div>
+
+
+
+  <!-- If I click on the hamburger button it toggles to an X -->
+
+  <button class="nav-toggle" aria-label="toggle navigation" (click)="toggleShow()">
+      <span class="hamburger"></span>
+  </button>
+
+  <nav class="nav" *ngIf="isShown">
+      <ul class="nav__list" >
+          <li class="nav__item" (click)="toggleShow()"><a routerLink="/" class="nav__link">Home</a></li>
+          <li class="nav__item" (click)="toggleShow()"><a routerLink="about" class="nav__link">About me</a></li>
+          <li class="nav__item" (click)="toggleShow()"><a routerLink="/mywork" class="nav__link">My Work</a></li>
+          <li class="nav__item" (click)="toggleShow()"><a routerLink="/contact" class="nav__link">Contact me</a></li>
+      </ul>
+  </nav>
+  <div class="logo logo__menu">
+    <img src="assets/img/norberticon.png" alt="" routerLink="/" style="cursor: pointer">
+</div>
+
+  <nav class="nav__menu">
+
+
+    <ul class="menu__list" >
+        <li class="menu__item" ><a routerLink="/" class="nav__link">Home</a></li>
+        <li class="menu__item" ><a routerLink="about" class="nav__link">About me</a></li>
+        <li class="menu__item" ><a routerLink="/mywork" class="nav__link">My Work</a></li>
+        <!-- <li class="menu__item" ><a routerLink="/contact" class="nav__link">Contact me</a></li> -->
+    </ul>
+</nav>
+</header>

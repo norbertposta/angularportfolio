@@ -1,0 +1,138 @@
+
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;    
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+    margin: 3px;
+}
+
+.portfolio__img {
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+    cursor: pointer ;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index:2;
+
+
+}
+
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p{
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.section__title{
+    margin-bottom: 50px;
+
+
+}
+
+// .portfolio__item{
+//     padding: 5px;
+ 
+// }
+
+// Modal
+
+
+
+
+.my-dialog {
+    width: 85%;
+    border: none;
+    min-height: 60%;
+  
+}
+
+.np-description-image{
+    margin-bottom: 10px;
+
+}
+
+@media (min-width: 600px)
+{
+    .my-dialog {
+        width: 70%;
+        min-height: 60%;
+        
+    }
+
+ 
+
+  
+}
+
+
+@media (min-width: 800px){
+
+    .np-description-image{
+        margin-right: 10px;
+        float: left; 
+       width: 40%;
+
+    
+    }
+
+}
+
+.np-row {
+    display:flex;
+}
+
+.np-close-btn {
+    position: absolute; /*or fixed*/
+    right: 2rem;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+.np-title{
+    font-weight: var(--fw-bold);
+    font-size: var( --fs-h3);
+}
+
+.btn__lower{
+    margin: 5px;
+    padding: 3px;
+   
+}
+
+.btn__container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+
+}
